@@ -2,8 +2,6 @@ package uz.tutorial.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import lombok.Data;
-import org.springframework.web.bind.annotation.PutMapping;
 
 @Entity
 public class BookModel {

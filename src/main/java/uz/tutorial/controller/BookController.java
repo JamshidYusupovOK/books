@@ -1,6 +1,5 @@
 package uz.tutorial.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import uz.tutorial.model.BookModel;
 import uz.tutorial.repositories.BookRepository;
@@ -11,14 +10,8 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/book")
 public class BookController {
-    private static final  List<BookModel> books=new ArrayList<>();
 
     private final BookRepository bookRepository;
-
-//    @Autowired
-//    public void BookService (BookRepository bookRepository){
-//        this.bookRepository = bookRepository;
-//    }
 
     public BookController(BookRepository bookRepository) {
         this.bookRepository = bookRepository;
